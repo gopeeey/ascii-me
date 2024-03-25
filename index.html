@@ -7,12 +7,23 @@
     </head>
 
     <body>
-        Hello worlders
-        <input type="file" accept="image/*" id="file-input">
-        <canvas id="canvas"></canvas>
-        <button id="playvid">Play video</button>
+        <h1>Some ASCII Magic!</h1>
+        <div>
+            <input type="file" accept="image/*" id="file-input">
+        </div>
+        <h3>OR</h3>
+        <!-- <button id="playvid">Play video</button> -->
+        <div>
+            <button id="startCamera">Start Camera</button>
+        </div>
+        <div class="video-options">
+            <select name="" id="camOptions" class="custom-select">
+                <option value="">Select camera</option>
+            </select>
+        </div>
         <div id="render-box"></div>
 
-        <script type="text/javascript" src="./index.js"></script>
+        <script type="module" charset="utf-8" src="./html2canvas.js"></script>
+        <script type="module" charset="utf-8" src="./index.js"></script>
     </body>
 </html>
